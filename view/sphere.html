@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    @import "../styles/reset.css";
+
+    body {
+      overflow: hidden;
+    }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous"></script>
+  <script src="../scripts/GLTFLoader.js"></script>
+  <script src="https://82mou.github.io/threejs/js/OrbitControls.js"></script>
+
+  <title>Стереометрия | Сфера</title>
+</head>
+<body>
+  
+  <script src="../scripts/main.js"></script>
+  <script>
+    init('../models/sphere/scene.gltf', 3)
+  </script>
+</body>
+</html>
