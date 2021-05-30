@@ -22,6 +22,8 @@ div.container {
   margin: 0 auto;
   padding: 25px 45px;
 
+  position: relative;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -41,6 +43,28 @@ div.container h1 {
   font-size: 36px;
   line-height: 43px;
   margin-bottom: 30px;
+}
+
+div.container h1 span {
+  font-weight: 400;
+}
+
+div.container > a {
+  position: absolute;
+
+  top: 42px;
+}
+
+div.container > a.back {
+  left: 45px;
+}
+
+div.container > a.forward {
+  right: 45px;
+}
+
+div.container > a span {
+  text-decoration: underline;
 }
 
 div.container div.previews {
