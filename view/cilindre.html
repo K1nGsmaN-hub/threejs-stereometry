@@ -11,6 +11,35 @@
     body {
       overflow: hidden;
     }
+
+    div {
+      max-width: 300px;
+      width: 100%;
+      height: 90px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: absolute;
+      margin-bottom: 30px;
+
+      top: 60px;
+      left: 50%;
+
+      background-color: #e5f4ff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+
+      border-radius: 20px;
+      overflow: hidden;
+
+      font-size: 36px;
+      line-height: 43px;
+      font-weight: 700;
+      text-shadow: 0 0 15px rgba(0,0,0,0.15);
+      
+      transform: translateX(-50%);
+    }
   </style>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous"></script>
@@ -20,7 +49,10 @@
   <title>Стереометрия | Цилиндр</title>
 </head>
 <body>
-  
+  <div>
+    <span>Цилиндр</span>
+  </div>
+
   <script src="../scripts/main.js"></script>
   <script>
     init('../models/cylinder/scene.gltf', 0.2)
